@@ -46,7 +46,7 @@ successfully on any other OS, please update this:
 
     $ sudo apt-get install python3-pip python-dev libevent-dev
     $ sudo pip3 install ez-setup
-    $ sudo apt-get install python-gevent python-gevent-websocket
+    $ sudo apt-get install python-gevent python-gevent-websocket (pip install gevent) (pip install gevent-websocket)
     $ sudo pip3 install greenlet bottle
 
 #### Gentoo
