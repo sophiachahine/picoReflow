@@ -46,7 +46,9 @@ successfully on any other OS, please update this:
 
     $ sudo apt-get install python3-pip python-dev libevent-dev
     $ sudo pip3 install ez-setup
-    $ sudo apt-get install python-gevent python-gevent-websocket (pip install gevent) (pip install gevent-websocket)
+    $ pip install gevent 
+    $ pip install gevent-websocket
+    //$ sudo apt-get install python-gevent python-gevent-websocket
     $ sudo pip3 install greenlet bottle
 
 #### Gentoo
@@ -88,7 +90,7 @@ All parameters are defined in config.py, just copy the example and review/change
 ### Autostart Server onBoot
 If you want the server to autostart on boot, run the following commands
 
-    sudo cp /home/pi/picoReflow/lib/init/reflow /etc/init.d/
+    sudo cp /home/pi/picoReflow/lib/init/reflow /etc/init.d/ (change the directory if needed)
     sudo chmod +x /etc/init.d/reflow
     sudo update-rc.d reflow defaults
 
